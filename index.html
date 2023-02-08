@@ -6,7 +6,7 @@
 <style>
     body {
     	font-family: sans-serif;
-        margin-top: 151px;
+        margin-top: 130px;
     }
     
     .nav {
@@ -17,6 +17,24 @@
         background-color: #000;
         color: #fff;
         z-index: 3;
+    }
+    
+    .nav ul {
+    	list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav li {
+    	float: left;
+    }
+    
+    .nav a {
+    	display: block;
+        color: #eb3838;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
     }
     
     .sidebar {
@@ -56,8 +74,13 @@
 
 <! nav>
 <div class="nav">
-	<h1 class="title"> Dunder <br> Mifflin Inc.</h1>
-    <p class="slogan">Your friendly neighborhood paper company</p>
+	<h1 class="title"> Dunder Mifflin Inc.</h1>
+    <ul>
+    	<li><p class="slogan">Your friendly neighborhood paper company</p></li>
+    	<li><a href="index.html"> Home </a></li>
+        <li><a href="contact.html"> Contact </a></li>
+        <li><a href="order.html"> Order </a></li>
+    </ul>
 </div>
 
 <! sidebar>
@@ -77,6 +100,8 @@
 
   	<h3 id='new'>New Customers</h3>
   	<p>Welcome to Dunder Mifflin! We are happy to have you join us! We hope to make your paper buying experience quick and easy and hope you’ll stop in at one of our branches soon! To view our options and prices and place your order click <a href="order.html">here</a>. Don’t hesitate to reach out to one of our <a href="contact.html">branches </a>if you need any help!</p>
+    
+    <hr>
 
   	<h3 id='old'>Returning Customers</h3>
   	<p>Welcome back! It’s good to see you again! Click <a href="contact.html">here</a> to contact your favorite branch or click <a href="order.html">here</a> to place an order online. Have a great day!</p>
