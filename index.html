@@ -4,30 +4,51 @@
 <title>Dunder Mifflin</title>
 <meta name=’viewport content=”width=device-width, initial scale=1”>
 <style>
-div.sidebar {display: block; width= 20px; background: #000; text-align: left; color: #ddd; font-family: Arial, Helvetica, sans-serif;}
+    body {font-family: sans-serif}
+    
+    .nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #000;
+        font-size: 40px;
+        vertical-align: center;
+    }
+    
+    .sidebar {
+        /*display: block; */
+        width= 10%; 
+        background: #000; 
+        text-align: left; 
+        color: #ddd; 
+    }
+    
+    
 
 </style>
 </head>
 <body>
-
-<h1>Dunder Mifflin Inc.</h1>
-<p>Your friendly neighborhood paper company.</p>
-
-<div class="sidebar">
-<div>New Customers</div> 
-<div>Returning Customers</div> 
-<div>Order</div> 
-<div>Prices</div> 
-<div>About Us</div>
+<div class="nav">
+    <h1>Dunder Mifflin Inc.</h1>
+    <p>Your friendly neighborhood paper company.</p>
 </div>
 
-<h2>Our Mission</h2>
+/* sidebar */
+<div class="sidebar">
+    <a href="#new">New Customers</a> 
+    <a href="#old">Returning Customers</a> 
+    <a href="order.html">Order</a> 
+    <a href="order.html">Prices</a> 
+    <a href="#abt">About Us</a>
+</div>
+
+<h1 id=abt>Our Mission</h2>
 <p>At Dunder Mifflin, we pride ourselves on customer service and our relationships that we build with our family of clients. We provide a level of service that big paper suppliers simply cannot match. Our company services the Northeast region of the U.S. through our headquarters in New York City and our regional branches located in Albany (NY), Binghamton (NY), Buffalo (NY), Camden (NJ), Nashua (NH), Pittsfield (MA), Scranton (PA), Stamford (CT), Utica (NY), and Yonkers (NY).</p>
 
-<h3>New Customers</h3>
+<h3 id=new>New Customers</h3>
 <p>Welcome to Dunder Mifflin! We are happy to have you join us! We hope to make your paper buying experience quick and easy and hope you’ll stop in at one of our branches soon! To view our options and prices and place your order click <a href="order.html">here</a>. Don’t hesitate to reach out to one of our <a href="contact.html">branches </a>if you need any help!</p>
 
-<h3>Returning Customers</h3>
+<h3 id=old>Returning Customers</h3>
 <p>Welcome back! It’s good to see you again! Click <a href="contact.html">here</a> to contact your favorite branch or click <a href="order.html">here</a> to place an order online. Have a great day!</p>
 
 </body>
